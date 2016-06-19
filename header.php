@@ -38,27 +38,17 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="calendar.html">What's up?</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="support.html">Support Us</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
+          <?php $page=substr($_SERVER['REQUEST_URI'], 22, -4); ?>
+            <li<?php if ($page=="index"){echo ' class="active"';}?>><a href="index.php">Home</a></li>
+            <li<?php if ($page=="about"){echo ' class="active"';}?>><a href="about.php">About</a></li>
+            <li<?php if ($page=="calendar"){echo ' class="active"';}?>><a href="calendar.php">What's up?</a></li>
+            <li<?php if ($page=="events"){echo ' class="active"';}?>><a href="events.php">Events</a></li>
+            <li<?php if ($page=="media"){echo ' class="active"';}?>><a href="media.php">Media</a></li>
+            <li<?php if ($page=="support"){echo ' class="active"';}?>><a href="support.php">Support Us</a></li>
+            <li<?php if ($page=="contact"){echo ' class="active"';}?>><a href="contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <section>
-
-    </section>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    <section class="container body">

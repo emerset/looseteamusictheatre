@@ -1,15 +1,13 @@
-body {
-  padding-top: 50px;
-}
-
 .logo-container{
 	background-color:#a8aa83;
+	width:100%;
 }
 
 .logo-container h1{
 	font-family: "Veranda", Arial;
 	font-size: 50px;
 	font-weight: bold;
+	color:#010101;
 }
 
 .upper-title{
