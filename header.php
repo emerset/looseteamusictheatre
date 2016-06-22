@@ -37,16 +37,16 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="collapse navbar-collapse page-titles">
           <ul class="nav navbar-nav">
           <?php $page=substr($_SERVER['REQUEST_URI'], 22, -4); ?>
-            <li<?php if ($page=="index"){echo ' class="active"';}?>><a href="index.php">Home</a></li>
-            <li<?php if ($page=="about"){echo ' class="active"';}?>><a href="about.php">About</a></li>
-            <li<?php if ($page=="calendar"){echo ' class="active"';}?>><a href="calendar.php">What's up?</a></li>
-            <li<?php if ($page=="events"){echo ' class="active"';}?>><a href="events.php">Events</a></li>
-            <li<?php if ($page=="media"){echo ' class="active"';}?>><a href="media.php">Media</a></li>
-            <li<?php if ($page=="support"){echo ' class="active"';}?>><a href="support.php">Support Us</a></li>
-            <li<?php if ($page=="contact"){echo ' class="active"';}?>><a href="contact.php">Contact</a></li>
+            <li<?php if ($page=="index"){echo ' class="active"';}?>><a href="index.php">HOME</a></li>
+            <li<?php if ($page=="about"){echo ' class="active"';}?>><a href="about.php">ABOUT</a></li>
+            <li<?php if ($page=="calendar"){echo ' class="active"';}?>><a href="calendar.php">WHAT'S UP?</a></li>
+            <li<?php if ($page=="events"){echo ' class="active"';}?>><a href="events.php">EVENTS</a></li>
+            <li<?php if ($page=="media"){echo ' class="active"';}?>><a href="media.php">MEDIA</a></li>
+            <li<?php if ($page=="support"){echo ' class="active"';}?>><a href="support.php">SUPPORT US</a></li>
+            <li<?php if ($page=="contact"){echo ' class="active"';}?>><a href="contact.php">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
