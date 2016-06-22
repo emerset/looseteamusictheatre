@@ -24,6 +24,21 @@
 	margin: 70px 15px 15px 15px;
 }
 
+.body{
+	padding: 30px;
+}
+
+.body-title{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.body-text{
+	font-family: "Veranda", Arial;
+	font-size: 16px;
+	line-height: 150%;
+}
+
 .footer{
 	background-color:#111;
 	color:#fff;
